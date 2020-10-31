@@ -1,0 +1,145 @@
+.register {
+  display: flex;
+  justify-content: center;
+}
+
+.register__intro {
+  background: #f9f9f9;
+  height: 80vh;
+  width: 40%;
+}
+
+.register__intro--link {
+  font-size: $s-size;
+  margin-left: 15rem;
+}
+
+.register__intro--welcome {
+  font-size: $m-size;
+  margin-left: 15rem;
+  margin-top: 10rem;
+}
+
+.register__intro--text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 15rem;
+  margin-top: 2rem;
+}
+
+.register__intro--img {
+  height: 40rem;
+  position: relative;
+  top: 8rem;
+  left: 35%;
+}
+
+.register__form--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.register__form {
+  width: 70%;
+}
+
+.register__form label {
+  font-size: $s-size;
+}
+
+.register__form input {
+  border-color: $footer-grey;
+  border-radius: 5px;
+  color: $dfx-blue;
+  height:4rem;
+  width: 100%;
+}
+
+.register__form input:focus {
+  border-color: $dfx-blue;
+  outline: none;
+}
+
+.register__form--group {
+  margin-left: 30%;
+}
+
+.register__form--user {
+  margin: $s-size 0 3rem 0
+}
+
+.register__form--email {
+  margin: 3rem 0 3rem 0
+}
+
+.register__form--password {
+  margin: 3rem 0 3rem 0
+}
+
+.register__form--button {
+  background-color: $dfx-green;
+  border-radius: 5px;
+  color: white;
+  height: 4rem;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.register__button {
+  border-style: solid;
+  height: 4rem;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+.btnStudentActive {
+  background-color: $dfx-green;
+  border-color: $dfx-green;
+  border-radius: 5px 0px 0px 5px;
+  color: white;
+
+}
+
+.btnStudentActive:focus {
+  color: lighten($color: $dfx-green, $amount: 30%);
+  outline: inherit;
+}
+
+.btnStudentInactive {
+  background-color: white;
+  border-color: $dfx-yellow;
+  border-radius: 5px 0px 0px 5px;
+  color: $dfx-yellow;
+
+}
+
+.btnStudentInactive:focus {
+  color: lighten($color: $dfx-yellow, $amount: 20%);
+  outline: inherit;
+}
+
+.btnMentorActive {
+  background-color: $dfx-yellow;
+  border-color: $dfx-yellow;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+}
+
+.btnMentorActive:focus {
+  color: lighten($color: $dfx-yellow, $amount: 30%);
+  outline: inherit;
+}
+
+.btnMentorInactive {
+  background-color: white;
+  border-color: $dfx-green;
+  border-radius: 0px 5px 5px 0px;
+  color: $dfx-green;
+}
+
+.btnMentorInactive:focus {
+  color: lighten($color: $dfx-green, $amount: 20%);
+  outline: inherit;
+}

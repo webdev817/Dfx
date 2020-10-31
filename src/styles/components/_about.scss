@@ -1,0 +1,67 @@
+.about__intro {
+  background:url('/public/images/whoarewe.jpg');
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+
+.about__intro--layer {
+  background-color: rgba($dfx-yellow, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about__pattern {
+  background-image: radial-gradient(white 20%, rgba($dfx-yellow, 0) 20%);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  height: 240px;
+  position: absolute;
+  top: 10rem;
+  left: 140rem;
+  width: 200px;
+  z-index: 0;
+}
+
+.about__title {
+  color: $dfx-red;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  font-size: $xl-size;
+  font-weight: 800;
+  line-height: 1.6;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 40%;
+  z-index: 100;
+}
+
+.about__content--title {
+  margin-left: 20%;
+  margin-top: $xl-size;
+}
+
+.about__content--text {
+  font-size: 2rem; 
+  line-height: 1.6;
+  margin: $xl-size 0 10rem 25%;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  z-index: 999;
+}
+
+.subtitle__pattern {
+  background-image: radial-gradient($dfx-green 20%, white 20%);
+  background-position: 0 0;
+  background-size: 10px 10px;
+  height: 100px;
+  position: absolute;
+  top: 57rem;
+  left: 18%;
+  width: 100px;
+  z-index: 0;
+}

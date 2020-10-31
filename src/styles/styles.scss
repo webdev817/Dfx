@@ -1,0 +1,15 @@
+@import './base/settings';
+@import './base/base';
+@import './components/about';
+@import './components/footer';
+@import './components/header';
+@import './components/homepage';
+@import './components/register';
+@import './components/gigform';
+@import './components/sidebar';
+.home-body {
+    width: 80%;
+}
+.main-body {
+    display: flex;
+}

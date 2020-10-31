@@ -1,0 +1,199 @@
+.gigform {
+  input, textarea {    
+    padding: 10px;
+  }
+}
+.gigform__menu {
+  background: #ffffff;
+  border-bottom: solid 1px lighten($border-grey, 20%);
+  padding: 20px 10px;
+  button {
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+  }
+}
+.gigform__header {  
+  background: #ffffff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 20px 40px 30px 40px;
+}
+.gigform__header--firstrow, .gigform__header--secondrow {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.gigform__header--banner {
+
+}
+.gigform__header--upload {  
+  height: 240px;
+  border: 1px solid $border-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gigform__header--upload-label {
+
+}
+.gigform__header--left {
+  float: left;
+  width: 45%;
+  padding: 20px;
+
+}
+.gigform__header--right {
+  float: left;
+  width: 55%;
+  padding: 20px;
+}
+.gigform__header label {
+  font-weight: bold;
+}
+.gigform__header input,
+.gigform__header textarea{
+  width: 100%;
+}
+
+.gigform__header input { 
+  width: 100%; 
+  height: 45px;
+}
+
+.rect-spinner-input {
+  display: flex;
+}
+.rect-spinner-input input{
+  text-align: center;
+}
+.rect-spinner-input__minus {
+  color: white;
+  background: black;
+  font-size: 25px;
+  float: left;
+  width: 80px;
+  text-align: center;
+  vertical-align: middle;
+  border:none;
+}
+.rect-spinner-input__plus {
+  color: white;
+  background: $dfx-deepgreen;  
+  font-size: 25px;
+  float: left;
+  width: 80px;
+  text-align: center;
+  padding-top: 5px;
+  border:none;
+}
+.circle-spinner-input {
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 1px $border-grey;
+  width: 150px;
+  padding: 10px;
+}
+.circle-spinner-input__minus {
+  color: $dfx-yellow;
+  border-radius: 50%;
+  border: solid 1px $dfx-yellow;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  padding-top: 0px;
+  background: white;
+}
+.circle-spinner-input__plus {
+  color: $dfx-yellow;
+  border-radius: 50%;
+  border: solid 1px $dfx-yellow;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  padding-top: 0px;
+  background: white;
+}
+.circle-spinner-input__text {
+  width: 65px;
+  text-align: center;
+  font-weight: bold;
+  font-size: $m-size;
+  padding-top: 2px;
+}
+
+.gigform__half {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+.gigform__day-card-list {
+  display: flex;
+  margin-top: 25px;
+  > * {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+.gigform__day-card {
+  float: left;
+  width: 33%;
+  background: white;  
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  textarea {
+    margin-top: 10px;
+    width: 100%;
+  }
+  label {
+    font-weight: bold;
+  }
+}
+.gigform__day-card-head {
+  padding: 20px 20px;
+  font-size: $m-size;
+  font-weight: bold;
+  color: $dfx-blue;
+  border-bottom: solid 1px lighten($border-grey, 20%);
+}
+.gigform__day-card-body {
+  padding: 20px 20px;
+}
+.gigform_error {  
+  margin-top: 20px;
+  color: $dfx-red;
+  font-size: $m-size;
+}
+.gigform__footer {
+  display: flow-root;
+  margin-top: 20px;
+}
+.gigform__submit {
+  padding: 10px;
+  background: $dfx-deepgreen;  
+  font-size: $m-size;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  right: 0px;
+  float: right;
+}
+.gigform__submit:active,
+.gigform__submit:focus{
+  outline:none;
+  box-shadow:none;
+
+}

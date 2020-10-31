@@ -1,0 +1,60 @@
+.homepage__intro {
+  background:url('/public/images/landingpage.jpg');
+  background-size: cover;
+  height: 75vh;
+  position: relative;
+}
+
+.homepage__intro--layer {
+  background-color: rgba($dfx-yellow, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage__intro--text {
+  color: white;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  font-size: $xl-size;
+  font-weight: 800;
+  line-height: 1.6;
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
+  width: 40%;
+  z-index: 100;
+}
+
+.red-text {
+  color: $dfx-red;
+}
+
+.homepage__video {
+  background: white;
+  border-radius: 5px;
+  color: $dfx-red;
+  font-size: $m-size;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 5rem;
+  text-align: center;
+  text-decoration: none;
+  width: 22%;
+}
+
+.homepage__blurb {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.homepage__pattern {
+  background-image: radial-gradient(white 20%, rgba($dfx-yellow, 0) 20%);
+  background-position: 0 0;
+  background-size: 25px 25px;
+  height: 300px;
+  position: absolute;
+  top: 0rem;
+  left: 110rem;
+  width: 250px;
+}
