@@ -41,6 +41,19 @@ class AuthService {
   getCurrentUser() {
     return JSON.parse(localStorage.getItem('user'))
   }
+
+  getToken(){
+    const loginedUser = JSON.parse(localStorage.getItem('user'))
+    var token = null;
+      if(!loginedUser){
+        token = null;
+      }
+      else{
+        token =  JSON.parse(localStorage.getItem('user')).token
+      
+      }
+    return token
+  }
 }
 
 export default new AuthService()

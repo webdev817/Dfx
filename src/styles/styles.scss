@@ -7,8 +7,13 @@
 @import './components/register';
 @import './components/gigform';
 @import './components/sidebar';
+@import './components/profilemenu';
+@import './components/profile';
 .home-body {
-    width: 80%;
+    width: 85%;
+}
+.unauth-home-body {
+    width: 100%;
 }
 .main-body {
     display: flex;

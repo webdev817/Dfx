@@ -21,12 +21,27 @@ import SignIn from '../components/SignInPage'
 import ToS from '../components/TosPage'
 import SideBar from '../components/SideBar'
 
+const loginedUser = JSON.parse(localStorage.getItem('user'))
+var token = null;
+  if(!loginedUser){
+     token = null;
+  }
+  else{
+    token =  JSON.parse(localStorage.getItem('user')).token
+   
+  }
 const AppRouter = () => (
+  
   <BrowserRouter>
     <div>
       <Header />
       <div className='main-body'>
+        {token ?
         <SideBar/>
+        :<>
+        </>
+        }
+        {token ?
         <Switch>
           <div className='home-body'>
             <Route path='/' component={HomePage} exact={true} />
@@ -47,6 +62,28 @@ const AppRouter = () => (
             <Route component={NotFoundPage} />
           </div>          
         </Switch>
+                :
+                <Switch>
+                <div className='unauth-home-body'>
+                  <Route path='/' component={HomePage} exact={true} />
+                  <Route path='/about' component={About}/>
+                  <Route path='/contact' component={Contact} />
+                  <Route path='/create_gig' component={AddGig} />
+                  <Route path='/edit_gig/:id' component={EditGig} />
+                  <Route path='/faq' component={Faq} />
+                  <Route path='/gigs' component={Gigs} />
+                  <Route path='/jobs' component={Jobs} />
+                  <Route path='/howitworks' component={HowItWorks} />
+                  <Route path='/privacy' component={Privacy} />
+                  <Route path='/profile' component={Profile} />
+                  <Route path='/register' component={Register} />
+                  <Route path='/services' component={Services} />
+                  <Route path='/signin' component={SignIn} />
+                  <Route path='/tos' component={ToS} />
+                  <Route component={NotFoundPage} />
+                </div>          
+              </Switch>
+                }
       </div>      
       <Footer />
     </div>

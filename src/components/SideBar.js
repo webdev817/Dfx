@@ -35,8 +35,10 @@ export default function SideBar() {
     setOpen(!open);
   };
 
+  
   return (
       <div className='sidebar'>
+
           <List
             component="nav"
             aria-labelledby="nested-list-subheader"
@@ -56,7 +58,7 @@ export default function SideBar() {
                     <ListItemText className='list-text' primary="Dashboard" />
                     {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
-                <Collapse in={open} timeout="auto" unmountOnExit>
+                    <Collapse in={open} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                     <ListItem button  component={Link} to="/gigs" className={classes.nested}>
                         <ListItemText className='list-text' primary="Gigs" />
@@ -74,7 +76,7 @@ export default function SideBar() {
                         <ListItemText className='list-text' primary="News Wall Posts" />
                     </ListItem>
                     </List>
-                </Collapse>
+                </Collapse>                
             </div>            
             <ListItem button component={Link} to="/howitworks">
                 <ListItemIcon className='icon-cell'>
@@ -107,6 +109,7 @@ export default function SideBar() {
                 <ListItemText className='list-text' primary="Support" />
             </ListItem>      
             </List>
-      </div>    
+
+      </div>
   );
 }
