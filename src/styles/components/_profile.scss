@@ -7,4 +7,35 @@
 }
 .profile-page {
     background: #efeff5;
+    height: 100%;
+}
+.table-panel {
+    width: 80%;
+    background: white;
+}
+.table-panel p {
+    font-size: 14px;
+}
+.tabs>div>div {
+    background: white;
+    text-align: left!important;
+}
+.tab-cell {
+    outline: none!important;
+    text-transform: unset!important;
+}
+.MuiTab-wrapper {
+    flex-direction: initial!important;
+    justify-content: unset!important;
+}
+.tab-cell span:first-child {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tabs>div>span {
+    background: #E7AE40!important;
+}
+.Mui-selected {
+    color: #E7AE40!important;
 }
